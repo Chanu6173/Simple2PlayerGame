@@ -72,3 +72,48 @@ Feel free to use and modify this code for your own projects.
 ## Contributing
 
 Feel free to fork this project and submit pull requests with improvements!
+# Simple 2 Player TicTacToe Game
+
+A console-based Tic Tac Toe game implemented in Java where two players can play against each other.
+
+## Game Logic
+
+1. **Board Structure**
+   - Uses a 3x3 grid represented by a 2D char array
+   - Empty cells are marked with spaces
+   - Player X uses 'X' symbol
+   - Player O uses 'O' symbol
+
+2. **Game Flow**
+   - Game starts with an empty board
+   - Players take turns (X goes first)
+   - Each turn:
+     - Board is displayed
+     - Current player enters row (0-2) and column (0-2)
+     - Move is validated
+     - Board is updated if move is valid
+
+3. **Win Conditions**
+   - Three same symbols in a row (horizontally)
+   - Three same symbols in a column (vertically)
+   - Three same symbols in a diagonal
+
+4. **Draw Condition**
+   - All cells are filled
+   - No player has won
+
+## How to Play
+
+1. Run the game
+2. Enter row number (0-2) when prompted
+3. Enter column number (0-2) when prompted
+4. Game continues until someone wins or it's a draw
+
+## Board Coordinates
+
+## Requirements
+- Java Runtime Environment (JRE)
+
+## How to Run
+1. Compile: `javac TicTacToe.java`
+2. Run: `java TicTacToe`
